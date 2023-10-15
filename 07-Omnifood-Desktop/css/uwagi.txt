@@ -1,0 +1,100 @@
+
+-----------
+<link rel = "stylesheet" href="ścieżka/plik.css" />     Dołączanie pliku css
+ ----------
+*
+{
+    padding:0;
+    margin:0;                       GLOBAL RESET
+    box-sizing:border-box;       
+}
+
+------------
+
+font-family:sans-serif;     rodzina czcionek
+font-weight:400;            grubość czcionki 
+line-height:1;              interlinia
+color: #fff                 kolor czcionki
+
+------------
+
+ZASADY RESPONSIVE
+
+Technika aby strona dostosowywała się do kazdego rodzaju ekranu
+
+1. Fluid layouts
+- Umożliwia dostosowanie się do viewportu pod względem szerokości oraz wysokości
+- Używać % lub vh/vw zamiast px
+- Używac max-width zamiast width
+
+2. Responsive units
+- używac rem zamiast px dla długości (lengths)
+- 1 rem = 10px
+- skaluje w dół lub w górę z automatu
+
+3. Flexible images
+- Używac % dla wymiarów obrazków razem z max-width
+
+4. Media queries
+- breakpointy
+
+Desktop First vs Mobile-First
+
+
+--------REM & max-width--------------------------------
+
+max-width: 1000px;    Powoduje dostosowanie do ekranu ale do maksymalnej szerokości - czyli
+                        jak rozciągniemy ekran poza max-width to bedzie białe pole. Jak 
+
+Jak okreslimy wielkości fontu w rem a nie w px, to mozna szybko opierdolić rozmiary czcionek na całej stronie jednym zamachem
+
+<section></section>
+
+<img src="ścieżka/plik.format" alt="opis dla accesibility" />
+
+&darr; - strzałka w dół
+
+--------------------------------------------------
+nawigacja
+
+nav --> ul --> li --> a
+
+-------------------------------------------------
+przejście ładne przycisku po najechaniu na niego
+
+transition: all 0.3s
+
+inline block
+
+jeżeli coś ma dwie klasy i chcemy wybrac tak aby obydwie klasy były uwzględnione to dajemy .jakas-klasa-1.jakas-klasa-2{}
+
+jak mamy nagłówki to nie podajemy w REM bo nie chcemy aby były skalowane gdy robimy sticky nav bar
+
+.klasa parent: nth-child(który child)
+
+
+sposób na wyśrodkowanie sekcji w przeglądarce
+
+.container{
+    max-width:;
+    margin: 0 auto;
+}
+
+
+Ważne w chuj do bycia responsive:
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ używać REM a nie px
+
+ aria-label - co to było
+ role="img"
+
+ JavaScript
+
+ nadawać sekcjom ID aby zrobić automatyczne scrollowanko
+
+ caniuse.com - możemy wrzucić css property i zobaczyć jakie przeglądarki to ogarniają
+
+ 
+
+
